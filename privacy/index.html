@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pendaftaran Struk Bensin</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body style="margin-left: 0px;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header">
+                    <h4 class="text-center text-bg-primary w-100" style="padding-bottom: 5px;">Pendaftaran Berhasil</h4><button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center w-100"></div>
+                    <div class="input-group" style="margin-top: 5px;"><span class="input-group-text">User&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><input class="form-control" type="text" id="userstruk" readonly=""></div>
+                    <div class="input-group" style="margin-top: 5px;"><span class="input-group-text">Password&nbsp; &nbsp;</span><input class="form-control" type="text" id="passwordstruk" readonly=""></div><button class="btn btn-primary w-100" type="button" style="margin-top: 5px;">Mohon Catat Dan Ingat User dan Password Anda</button>
+                    <p class="text-center">User Bisa Digunakan Setelah Proses Aktivasi User Dilakukan</p>
+                    <p class="text-center">Silahkan Transfer Biaya Pendaftaran Dan Aktivasi User Sebesar Dibawah :</p>
+                    <h1 class="text-center" id="nominal">-</h1><p>Ke Rekening :</p>
+<h4>Bank : BCA </h4>
+<div class="form-group">
+<h4>No Rekening :</h4><h4><input class="form-control form-control-lg" readonly type="text" value="2312531195" id="myInput"></h4>
+<button class="btn btn-primary w-100" onclick="myFunction()">Salin No Rekening</button>
+</div>
+<h4>Atas Nama : Deri Gustiadi </h4>
+<p class="mb-0">1. Wajib Transfer Sesuai Nilai Yang Tertera Diatas (Tidak Menambahkan Atau Mengurangi Nilai Yang Tertera Diatas) Untuk Memudahkan Sistem Dalam Verifikasi Dana Masuk Dan Otomatisasi Aktivasi User.</p>
+				  <p class="mb-0">2. Aktivasi Akan Diproses Minimal 30 Menit Setelah Dana Ditransfer, Maksimal 1x24 Jam Apabila Sistem i-bank Perbankan Sedang Gangguan.</p>
+				  <p class="mb-0">3. Info User Telah Diaktivasi Akan Disampaikan Melalui Whatsapp.</p>
+				  <p class="mb-0">4. Apabila dalam 30 Menit Setelah Melakukan Transfer Tidak Menerima Whatsapp, Silahkan Coba Login Menggunakan User Password Diatas atau Bisa Hubungi Email Di : deri.gustiadi@gmail.com</p>
+
+
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div><div class="modal fade" tabindex="-1" role="dialog" id="spinnerModal">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <span class="fa fa-spinner fa-spin fa-3x w-100"></span>
+    </div>
+</div>
+    <form style="margin-left: 3px;margin-right: 3px;">
+        <div>
+            <h4>Syarat &amp; Ketentuan</h4><small class="form-text">1. Aplikasi "Struk Bensin" adalah aplikasi untuk mencetak struk pembelian bensin.<br><br>2. Aplikasi "Struk Bensin" dibuat untuk kebutuhan para pemilik SPBU Mini/POM Mini/Pertamini.<br><br>3. Dengan mendaftar berarti anda telah menyatakan bahwa aplikasi ini anda akan gunakan untuk kebutuhan yang ada pada point (2).<br><br>4. Untuk penggunaan diluar kebutuhan point (2), maka dengan ini pengembang aplikasi tidak bertanggung jawab atas segala bentuk kerugian yang ditimbulkan dalam penggunaan aplikasi diluar peruntukannya.<br><br>5. Untuk menggunakan aplikasi "Struk Bensin", pengguna wajib mempunyai user &amp; password yang terdaftar pada sistem server "Struk Bensin".<br><br>6. Setiap pendaftaran user, pengguna akan dibebankan biaya sebesar Rp. 250.000,-<br><br>7. User berlaku untuk selamanya dan hanya bisa digunakan aktif pada 1 (satu) handphone saja.<br><br>8. Setiap pengguna yang telah mempunyai user dapat memindahkan lisensi user di satu handphone ke handphone lainya dengan cara mereset user agar dapat dipakai pada handphone tersebut.<br><br>9. Apabila terjadi penghapusan aplikasi setelah user terdaftar atas 1 (satu) handphone, maka instalasi selanjutnya akan terbaca sebagai pemindahan handphone. Pada kondisi ini user wajib mereset kembali user yang dimiliki.<br><br>10. Menu reset user ada pada halaman awal aplikasi "Struk Bensin".<br><br>11. Sebelum mendaftar pengguna wajib mencoba dahulu menu "DEMO" dan melakukan print seluruh format cetakan yang ada, pastikan semuanya berjalan lancar, karena user yang sudah dibuat dan biaya yang telah diserahkan kepada pengembang aplikasi tidak dapat dikembalikan.<br><br>12. Pengembang tidak menerima request / permintaan penambahan atau perubahan format hasil cetakan yang sudah ada.<br><br>13. Pengembang tidak menerima permintaan pengembalian Dana yang telah diserahkan pengguna kepada pengembang dengan alasan apapun.<br><br>14. Pada aplikasi tidak ada fasilitas mencetak logo apapun pada hasil cetak, baik menu DEMO ataupun menu login menggunakan user.<br><br><br><br>Spesifikasi teknis :<br><br>1. Handphone sistem operasi android.<br><br>2. Mobile printer thermal dengan koneksi bluetooth (bukan wifi,bukan usb) dengan ukuran kertas 58 mm<br><br>3. Koneksi internet (untuk login pada aplikasi).</small>
+            <div></div>
+        </div>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
